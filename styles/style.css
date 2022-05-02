@@ -52,6 +52,7 @@ body{
 
 section{
   padding: 2rem 9%;
+  
 }
 
 /* header starts here */
@@ -233,9 +234,11 @@ header #menu-bar{
   flex-flow: column;
   position: relative;
   z-index: 0;
+ 
 }
 .home .content{
   text-align: center;
+  /* background-color: #604003; */
 }
 .home .content h3{
   font-size: 4.5rem;
@@ -258,15 +261,16 @@ header #menu-bar{
   height: 100%;
   width: 100%;
   object-fit: cover;
-  z-index: -1;
+  z-index: -1;  
   
 }
 .home .controls{
   padding: .4rem;
   border-radius: 5rem;
-  background: rgba(0,0 ,0 ,0.7 );  
+  background: rgba(0,0 ,0 ,0.2 );  
   position: relative;
   top: 10rem;
+  margin-left: -2rem;
 }
 .home .controls .vid-btn{
   height: 2rem;
