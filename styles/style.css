@@ -27,6 +27,9 @@ html{
   scroll-padding-top: 6rem;
   scroll-behavior: smooth;
 }
+body{
+  height: 100vh;
+}
 header{
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -57,9 +60,11 @@ header .navbar a:hover{
 header .icons{
   font-size: 2.5rem;
   color: #fff;
-  cursor: pointer;
-  margin-right: 2rem;
+  cursor: pointer;  
   
+}
+header .icons i{
+  margin-right: 2rem;
 }
 header .icons i:hover{
   color: var(--orange);
@@ -74,7 +79,8 @@ header .search-bar-container{
   border-top: .1rem solid #fff;
   padding: 1rem 2rem;
   background-color: #333;
-  z-index: 22;
+  z-index: 21;
+  clip-path: polygon(0 0,100% 0,100% 0,0 0);
 }
 header .search-bar-container #search-bar{
   padding: 1rem;
@@ -83,4 +89,16 @@ header .search-bar-container #search-bar{
   text-transform: none;
   font-size: 1.7rem;
   border-radius: .5rem;
+}
+header .search-bar-container label{
+  color: #fff;
+  cursor: pointer;
+  font-size: 3rem;
+  margin-left: 1.5rem;
+}
+header .search-bar-container label:hover{
+  color: var(--orange);
+}
+header .search-bar-container.active{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
