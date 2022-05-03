@@ -51,8 +51,7 @@ body{
 }
 
 section{
-  padding: 2rem 9%;
-  
+  padding: 2rem 9%;  
 }
 
 /* header starts here */
@@ -83,15 +82,13 @@ header .navbar a{
   margin: 0 .5rem;
 }
 
-
 header .navbar a:hover{
   color: var(--orange);
 }
 header .icons{
   font-size: 2.5rem;
   color: #fff;
-  cursor: pointer;  
-  
+  cursor: pointer;    
 }
 header .icons i{
   margin-right: 2rem;
@@ -133,7 +130,6 @@ header .search-bar-container.active{
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   transition: .2s ease-in-out;
 }
-
 header #menu-bar{
   color: #fff;
   font-size: 2rem;
@@ -155,13 +151,11 @@ header #menu-bar{
   min-height: 100vh;
   min-width: 100vw;
   background-color: rgba(0,0 ,0 ,0.5 );
-  display: flex;
-  
+  display: flex;  
   align-items: center;
   justify-content: center;
   z-index: 23;
 }
-
 .login-form-container form{  
   margin: 2rem;
   padding: 2rem;  
@@ -233,8 +227,7 @@ header #menu-bar{
   justify-content: center;
   flex-flow: column;
   position: relative;
-  z-index: 0;
- 
+  z-index: 0; 
 }
 .home .content{
   text-align: center;
@@ -246,7 +239,6 @@ header #menu-bar{
   color: #fff;
   text-transform: uppercase;
   text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.1);
-
 }
 .home .content p{
   font-size: 2.5rem;
@@ -261,8 +253,7 @@ header #menu-bar{
   height: 100%;
   width: 100%;
   object-fit: cover;
-  z-index: -1;  
-  
+  z-index: -1;    
 }
 .home .controls{
   padding: .4rem;
@@ -280,7 +271,6 @@ header #menu-bar{
   background: #fff;
   cursor: pointer;
   margin: 0 .5rem;
-
 }
 .home .controls .vid-btn.active{
   background: var(--orange);
@@ -288,7 +278,58 @@ header #menu-bar{
 /* home section ends here */
 
 
+/* Book section starts here */
 
+.heading{
+  text-align: center;
+  padding: 2.5rem 0;
+}
+.heading span{
+  font-size: 3.5rem;
+  background: rgba(255, 165, 0, .2);
+  color: var(--orange);
+  padding: .2rem 1rem;
+  border-radius: .5rem;
+  display: inline-block;
+}
+.heading .space{
+  background: none;
+}
+.book .row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.book .image{
+  flex: 1 1 40rem;
+}
+.book .image img{
+  width: 100%;
+}
+.book .row form{
+  flex: 1 1 40rem;
+  padding: 1.5rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: .5rem;
+  text-align: center;
+  
+}
+.book .row form .inputbox{
+  padding: .5rem 0;
+}
+.book .row form .inputbox input{
+  width: 100%;
+  padding: 1rem;
+  border: .1rem solid var(--orange);
+  border-radius: .5rem;
+}
+.book .row form .inputbox h3{
+  font-size: 1.7rem;
+  margin-bottom: .5rem;
+}
+
+/* Book section ends here */
 
 
 
@@ -366,5 +407,14 @@ header #menu-bar{
   }
   .login-form-container form{
     width: 90%;
+  }
+  .heading span{
+    font-size: 2.25rem;
+  }
+}
+@media (max-width: 328px){
+  html{
+    font-size: 40.5%;
+    
   }
 }
