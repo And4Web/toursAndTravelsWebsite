@@ -332,8 +332,101 @@ header #menu-bar{
 /* Book section ends here */
 
 
+/* packages section starts here */
+
+.packages .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  
+}
+.packages .box-container .box{
+  flex: 1 1 30rem;
+  border-radius: .5rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  
+}
+.packages .box-container .box:hover{
+  transform: scale(1.01);
+  transition: transform .2s ease-in-out;
+
+}
+.packages .box-container .box img{
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+}
+.packages .box-container .box .content{
+  padding: 2rem;
+}
+.packages .box-container .box .content h3{
+  font-size: 2rem;
+  color: #333;
+}
+.packages .box-container .box .content h3 i{
+  color: var(--orange);
+  margin-right: 1rem;  
+}
+.packages .box-container .box .content p{
+  font-size: 1.5rem;
+  text-align: justify;
+  margin-top: 1rem; margin-bottom: 1rem;
+}
+.packages .box-container .box .content .stars i{
+  font-size: 1.5rem;
+  color: var(--orange);
+  margin-bottom: 1rem;
+}
+.packages .box-container .box .content .price{
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+.packages .box-container .box .content .price span{
+  font-size: 1.4rem;
+  font-weight: normal;
+  text-decoration: line-through;
+}
+
+/* packages section ends here */
 
 
+/* services section starts here */
+
+.services .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  gap: 2rem;
+}
+.services .box-container .box{
+  flex: 1 1 30rem;
+  text-align: center;
+  border-radius: .5rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+.services .box-container .box:hover{
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  transform: scale(1.01);
+  transition: transform .2s ease-in-out;
+}
+.services .box-container .box i{ 
+  padding: 1rem;
+  font-size: 5rem;
+  color: var(--orange);
+}
+.services .box-container .box h3{
+  font-size: 2rem;
+  padding: 1rem;
+}
+.services .box-container .box p{
+  font-size: 1.7rem;
+  text-align: justify;
+}
+
+
+/* services section ends here */
 
 
 
